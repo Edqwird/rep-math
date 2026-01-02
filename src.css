@@ -248,26 +248,79 @@ body {
 }
 
 .tarifBox {
-    margin-left: 30px;
     margin-top: 40px;
     display: flex;
-    overflow-x: auto; 
-    gap: 50px;
-    width: 100%; 
-    /* scrollbar-width: thin; */
-    scrollbar-color: #888 transparent;
+    justify-content: start;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    width: 90%;
+}
+.tarifBox::-webkit-scrollbar {
+    display: none;
 }
 
 .tBox {
-    
-    min-width: 350px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 85vw;
     height: 500px;
-    background-color: #b2b7b1;
+    background: #e1e5e4;
     border-radius: 2rem;
-    flex-shrink: 0;
+    scroll-snap-align: center;
+    gap: 50px;
 }
 
+.textBox {
+    font-size: 2rem;
+    font-family: bbold;
+    color: #171717;
+}
 
+.infoText {
+    font-family: b1;
+    width: 300px;
+    font-size: 1.5rem;
+    color: #171717;
+}
+
+.textBox, .infoText, .sumBox {
+    margin-left: 29px
+}
+
+.sumBox {
+    display: flex;
+    gap: 10px;
+}
+
+.sumSym {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #171717;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #171717;
+    border-radius: 2rem;
+    font-size: 2rem;
+    font-family: b1;
+}
+
+.sumText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e1e5e4;
+    width: 200px;
+    height: 50px;
+    border-radius: 2rem;
+    border: 1px solid #171717;
+    font-size: 1.6rem;
+    font-family: b1;
+    background-color: #171717;
+}
 
 
 
